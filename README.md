@@ -11,8 +11,8 @@ The MyToken smart contract lets you create and manage a custom token with a name
 ### Installation
 
 #### How to Download and Set Up
-1. Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your computer.
-2. Install [Truffle Suite](https://www.trufflesuite.com/):
+1. Make sure you have Node.js and npm installed on your computer.
+2. Install Truffle Suite:
     ```bash
     npm install -g truffle
     ```
@@ -23,8 +23,8 @@ The MyToken smart contract lets you create and manage a custom token with a name
     ```
 
 #### File Modifications
-1. If needed, update the contract name and parameters in the `MyToken.sol` file.
-2. Set up the desired Ethereum network in `truffle-config.js`.
+- If needed, update the contract name and parameters in the `MyToken.sol` file.
+- Set up the desired Ethereum network in `truffle-config.js`.
 
 ### Running the Program
 
@@ -54,45 +54,16 @@ The MyToken smart contract lets you create and manage a custom token with a name
     await instance.burn('0xYourAddress', 500);
     ```
 
-### Troubleshooting
+## Troubleshooting
 
-#### Common Issues and Fixes
-1. **Not Enough Gas**: Make sure you have enough ETH to pay for gas fees.
-2. **Invalid Opcode**: Check for mistakes in your contract code.
-3. **Network Problems**: Check the network settings in `truffle-config.js`.
+### Common Issues and Fixes
+- **Not Enough Gas:** Make sure you have enough ETH to pay for gas fees.
+- **Invalid Opcode:** Check for mistakes in your contract code.
+- **Network Problems:** Check the network settings in `truffle-config.js`.
 
 ## Authors
-- Dominique Pizzie  
-  GitHub: @DomPizzie
+- Naman Sinha
+  - GitHub: [@naman221462](https://github.com/naman221462)
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-
-```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.18;
-
-contract MyToken {
-    string public tokenName;
-    string public tokenAbbrv;
-    uint256 public totalSupply;
-
-    mapping(address => uint256) public balances;
-
-    constructor(string memory _name, string memory _abbrv) {
-        tokenName = _name;
-        tokenAbbrv = _abbrv;
-    }
-
-    function mint(address _to, uint256 _value) public {
-        totalSupply += _value;
-        balances[_to] += _value;
-    }
-
-    function burn(address _from, uint256 _value) public {
-        require(balances[_from] >= _value, "Not enough balance to burn");
-        totalSupply -= _value;
-        balances[_from] -= _value;
-    }
-}
-```
+This project is licensed under the MIT License.
