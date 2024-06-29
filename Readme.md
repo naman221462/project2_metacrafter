@@ -46,7 +46,7 @@ Add the address to mint/burn to add or burn the tokens.
 
 ## Authors
 
-Anshu
+Naman Sinha
 
 ## License
 
