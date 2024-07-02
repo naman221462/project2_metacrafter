@@ -18,9 +18,9 @@ pragma solidity 0.8.18;
 contract MyToken {
 
     // public variables here
-    string public tokenName="DigitalLandToken";
-    string public tokenAbb="DLToken";
-    string public symbol="DLT";
+    string public tokenName="NamanKumarSinha";
+    string public tokenAbb="NKS";
+    string public symbol="N";
     uint public totalSupply=0;
 
     // mapping variable here
