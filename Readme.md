@@ -1,14 +1,14 @@
 PROJECT TITLE: SMART CONTRACT FOR MINTING AND BURNING TOKENS
 
-DESCRIPTION: The project is a basic implementation of an Ethereum smart contract that creates a token named "DigitalLandToken" with the abbreviation "DLToken" and the symbol "DLT". This smart contract is written in Solidity and is designed to manage the minting and burning of these tokens.
+DESCRIPTION: The project is a basic implementation of an Ethereum smart contract that creates a token named "NamanKunarSinha" with the abbreviation "NKS" and the symbol "N". This smart contract is written in Solidity and is designed to manage the minting and burning of these tokens.
 
 PUBLIC VARIABLES
 
 tokenName: Stores the name of the token.
 
-tokenAbb: Stores the abbreviation of the token, set to "DLToken".
+tokenAbb: Stores the abbreviation of the token, set to "NKS".
 
-symbol: Stores the symbol of the token, set to "DLT".
+symbol: Stores the symbol of the token, set to "N".
 
 totalSupply: Keeps track of the total number of tokens in circulation. Initially set to 0.
 
