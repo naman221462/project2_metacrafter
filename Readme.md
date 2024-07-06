@@ -1,6 +1,6 @@
 PROJECT TITLE: TOKEN MANAGEMENT SMART CONTRACT FOR MINTING AND BURNING
 
-DESCRIPTION: This project involves creating a basic Ethereum smart contract that manages a token named "NamanKunarSinha" with the abbreviation "NKS" and the symbol "N". Written in Solidity, this smart contract facilitates the minting and burning of these tokens.
+DESCRIPTION: This project involves the creation of an Ethereum smart contract that manages a token called "NamanKunarSinha", consisting of the abbreviation "NKS" and the symbol "N". This smart contract, written in Solidity, makes it easy to mint and burn tokens.
 
 PUBLIC VARIABLES:
 
